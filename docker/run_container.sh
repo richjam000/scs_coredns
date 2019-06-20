@@ -1,10 +1,4 @@
-docker volume create mulops_html
-docker volume create mulops_cgi-bin
-docker volume create mulops_logs
-docker volume create mulops_conf
-docker run -d --name=mulops --network=jamnet  --hostname=mulops \
---volume mulops_html:/var/www/html \
---volume mulops_cgi-bin:/var/www/cgi-bin \
---volume mulops_logs:/var/log/httpd \
---volume mulops_conf:/etc/httpd \
-localhost:5000/scsuk.net/mulops:1.0
+docker volume create scs_coredns_conf
+docker run -d --name=scs_coredns --network=jamnet --hostname=coredns \
+--volume scs_coredns_conf:/mnt/coredns
+localhost:5000/scsuk.net/scs_coredns:1.0
