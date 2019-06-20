@@ -1,0 +1,11 @@
+.:53 {
+    forward . 192.168.1.254
+    log
+    errors
+}
+
+local:53 {
+    file /mnt/coredns/local.db
+    log
+    errors
+}

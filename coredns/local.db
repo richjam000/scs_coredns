@@ -1,0 +1,11 @@
+local. IN  SOA dns.local. richard.jamieson.scsuk.net. 2019061101 7200 3600 1209600 3600
+jam1.local.   		IN  	A   	192.168.1.210
+hub.local.		IN	A 	192.168.1.254
+dns			IN  	CNAME   jam1
+www.scsuk		IN	CNAME	jam1
+www.mulops		IN	CNAME	jam1
+www.knocat		IN	CNAME	jam1
+registry		IN      CNAME   jam1
+knocat			IN      CNAME   jam1
+nginx			IN      CNAME   jam1
+gitlab			IN	CNAME	jam1
